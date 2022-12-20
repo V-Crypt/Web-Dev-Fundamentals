@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+		<title>MOA | Home</title>
+        <link rel="icon" href="img/logo.jpg"/>
+    	<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap" rel="stylesheet">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+	</head>
+
+	<body>
+	
+		<div id="content">
+		
+			<center><img id="logo" src="img/logo.jpg"></center>		
+			<nav class="menu">
+					
+				<hr id="linea1">
+            	<ul>
+            	
+            		<li><a href="index.html">Home</a></li>
+            		<li><a href="tienda.html">Tienda</a></li>
+                	<li><a href="palabraDelDia.html">Palabra del Día</a></li>
+                	<li><a href="conocenos.html">Conócenos</a></li>
+                	
+            	</ul>
+            	<hr id="linea2">
+            	
+            </nav>
+          	<span class="target"></span>
+			<h1>NOVEDADES</h1>
+			<div id="demo" class="carousel slide" data-ride="carousel">
+
+  					<!-- Indicators -->
+  					<ul class="carousel-indicators">
+  					
+    					<li data-target="#demo" data-slide-to="0" class="active"></li>
+    					<li data-target="#demo" data-slide-to="1"></li>
+    					<li data-target="#demo" data-slide-to="2"></li>
+    					
+  					</ul>
+  
+  					<!-- The slideshow -->
+ 	 				<center><div class="carousel-inner">
+ 	 				
+    					<div class="carousel-item active">
+    					
+      						<img src="img/p1.jpg" alt="Playera xolo frontal">
+      						
+    					</div>
+   				 		<div class="carousel-item">
+   				 		
+      						<img src="img/p2.jpg" alt="Playera aguila frontal">
+      						
+    					</div>
+    					<div class="carousel-item">
+    					
+      						<img src="img/p3.jpg" alt="Playera nopales frontal">
+      						
+    					</div>
+    					
+  					</div></center>
+  					<!-- Left and right controls -->
+  					<a class="carousel-control-prev" href="#demo" data-slide="prev">
+  					
+    					<span class="carousel-control-prev-icon"></span>
+    					
+  					</a>
+  					<a class="carousel-control-next" href="#demo" data-slide="next">
+  					
+    					<span class="carousel-control-next-icon"></span>
+    					
+  					</a>
+  					
+				</div>
+				<div id="footer">
+				
+					<h2><b>Interesado(a) en...</b></h2>
+					<center><h3><a href="conocenos.html">¿Quiénes somos?</a></h3></center>
+					<hr id="linea3">
+					<div id="redSocial">
+			
+						<img id="izqI" src="img/ubi.png" alt="Ícono de ubicación">
+						<a href="https://embamex.sre.gob.mx/nigeria/index.php/es/mexico-informacion" target="_blank"><img id="izqI2" src="img/bandera.png" alt="Bandera mexicana"></a>
+						<span>© 2020 MOA. Todos los derechos reservados</span>
+						<a href="https://www.facebook.com/MOA-103908384749828/?__tn__=kC-R&eid=ARAYlQ-elpFKrpVX5A4RtQ0TLq5ul2IR8rcX7cU4DXE9sU1_L_HMb7ItEJPYLM8Xl4KseliE1DCT_Iat&hc_ref=ARRFX2zztY2oNFrz43ByKVRvovPupZEoMCCzEx_8xxW_356dNP6C4byl27Aqi79vZOo&fref=nf&__xts__[0]=68.ARBbO3osuXHX0l_w5vlHvmBAFLwxjVhG1N31MktvLbBeFlGLSgyn3yqajrHVVwmr0188ZZxUDrZDME3sR6eR5lD8wXy3GzXOZhgs04AmF74WOizv0JaZMynzjQ8uS0zJPp2i1PWUyU8wwS7Vw8xJj3WYmx1zijSn3lBas2yiSb5fh7ox3pPmkmgBzVMsmuHORLsp6_qtcg7Xgo-kRnjggSP04SEunWg0qkyFVW6rNk4XHoUAwZ_aEzAOPMIgFLP1z4koc-EoGQo-q1vk6YNTeeQaHO4BZA-JS0QUYfbCPsiNj1Jbp6Vp9ZKEiONjeXy7rIWV0whxBNGANBHksnRV9Bwyo6WP8ZyErkqUeOGLMbAwGNaEm7u69g9wlfVaZPoM3A" target="_blank"><img id="derI" src="img/face.jpg" alt="Ícono de facebook"></a>
+						<a href="https://www.instagram.com/imperio_moa/" target="_blank"><img id="derI2" src="img/insta.png" alt="Ícono de instagram"></a>
+					
+					</div>
+					
+      			</div>
+      			
+      		</div>
+			<script>
+		
+			(function() {
+
+  				const target = document.querySelector(".target");
+  				const links = document.querySelectorAll(".menu a");
+  				const colors = ["deepskyblue", "orange", "firebrick", "gold", "green", "grey", "red", "black", "darkblue"];
+
+  				function mouseenterFunc() {
+   					if (!this.parentNode.classList.contains("active")) {
+      					for (let i = 0; i < links.length; i++) {
+        					if (links[i].parentNode.classList.contains("active")) {
+          						links[i].parentNode.classList.remove("active");
+        					}
+        					links[i].style.opacity = "0.25";
+      					}
+
+      					this.parentNode.classList.add("active");
+     	 				this.style.opacity = "1";
+
+      					const width = this.getBoundingClientRect().width;
+      					const height = this.getBoundingClientRect().height;
+      					const left = this.getBoundingClientRect().left + window.pageXOffset;
+      					const top = this.getBoundingClientRect().top + window.pageYOffset;
+      					const color = colors[Math.floor(Math.random() * colors.length)];
+
+      					target.style.width = `${width}px`;
+      					target.style.height = `${height}px`;
+      					target.style.left = `${left}px`;
+      					target.style.top = `${top}px`;
+      					target.style.borderColor = color;
+      					target.style.transform = "none";
+    				}
+  				}
+
+  				for (let i = 0; i < links.length; i++) {
+    				links[i].addEventListener("mouseenter", mouseenterFunc);
+  				}
+
+  				function resizeFunc() {
+    				const active = document.querySelector(".menu li.active");
+
+    				if (active) {
+      					const left = active.getBoundingClientRect().left + window.pageXOffset;
+      					const top = active.getBoundingClientRect().top + window.pageYOffset;
+
+      					target.style.left = `${left}px`;
+      					target.style.top = `${top}px`;
+    				}
+  				}
+
+  				window.addEventListener("resize", resizeFunc);
+
+			})();
+		
+		</script>
+
+	</body>
+	
+</html>

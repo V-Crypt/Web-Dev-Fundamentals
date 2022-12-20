@@ -1,0 +1,806 @@
+#logo {
+	
+	width: 200px;
+	margin-top: 20px;
+	
+}
+		
+#linea1 {
+				
+	margin-top: 50px;
+	height: 7px;
+  	width: 50%;
+  	background-color: black;
+	align: center;
+
+			
+}
+			
+.menu ul {
+	
+  	display: flex;
+  	justify-content: center;
+  	flex-wrap: wrap;
+  	list-style-type: none;
+  	padding: 0;
+  	font-family: 'Kanit', sans-serif;
+  
+}
+ 
+.menu li:not(:last-child) {
+	
+  	margin-right: 20px;
+  
+}
+
+.menu a:hover {
+	
+	text-decoration: none;
+	
+}
+ 
+.menu a {
+	
+  	display: block;
+  	font-size: 25px;
+  	color: black;
+  	text-decoration: none;
+  	padding: 7px 15px;
+  
+}
+ 
+.target {
+	
+  	position: absolute;
+  	border-bottom: 4px solid transparent;
+  	z-index: -1;
+ 	transform: translateX(-60px);
+  
+}
+ 
+.menu a,
+.target {
+	
+  	transition: all .35s ease-in-out;
+  
+}
+            
+#linea2 {
+	
+	margin-top: 25px;
+	height: 7px;
+  	width: 50%;
+  	background-color: black;
+	align: center;
+	
+}
+			
+#content h1 {
+			
+	font-size: 80px;
+	font-family: 'Special Elite', cursive;
+	text-align: center;
+	margin-top: 70px;
+	margin-bottom: 30px;
+			
+}
+			
+/* Make the image fully responsive */
+.carousel-inner img {
+  		
+	width: 31%;
+	height: 31%;
+    			
+}
+
+#demo a {
+	
+	background-color: #000000;
+	
+}
+
+#footer {
+			
+	margin-top: 80px;
+	background-color: #000000;	
+	position: absolute;
+	width: 100%;
+
+}
+
+#footer h2 {
+	
+	font-size: 27px;
+	color: #ffffff;
+	margin: 50px 0 0 80px;
+	font-family: 'Quattrocento Sans', sans-serif;
+	
+}
+
+#footer h3 a {
+
+	color: #000000; 
+	font-size: 20px; 
+	font-weight: 400;  
+	background: #ffffff; 
+	padding: 20px; 
+	border-radius: 35px 0px 35px 0px; 
+	-moz-border-radius: 35px 0px 35px 0px; 
+	-webkit-border-radius: 35px 0px 35px 0px; 
+	border: 3px solid #ffffff;
+	position: absolute;
+	margin: 110px 0 0 -90px;
+	
+}
+
+#footer h3 a:hover {
+
+	text-decoration: none;
+	background-color: #BABEBF; 
+	
+}
+
+#fav {
+	
+	position: absolute;
+	margin: 50px 0 0 0;
+	font-size: 20px;
+	color: #ffffff;
+	font-family: 'Quattrocento Sans', sans-serif;
+	
+}
+
+#coraFav {
+	
+	position: absolute;
+	width: 80px;
+	margin: 35px 0 0 230px;
+	
+	
+}
+
+#car {
+	
+	position: absolute;
+	width: 80px;
+	margin: 35px 0 0 1650px;
+	
+}
+
+#linea3 {
+	
+	margin-top: 360px;
+	height: 4px;
+  	width: 70%;
+  	background-color: white;
+	align: center;
+	
+}
+
+#izqI {
+	
+	margin: 0 0 10px 300px;
+	width: 30px;
+	
+}
+
+#izqI2 {
+	
+	margin: 0 0 10px 10px;
+	width: 45px;
+
+}
+
+#redSocial span {
+            
+	margin-left: 385px;
+	color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Kanit', sans-serif;
+       
+}
+
+#derI {
+	
+	margin: 0 0 10px 378px;
+	width: 45px;
+
+}
+
+#derI2 {
+	
+	margin: 0 0 10px 3px;
+	width: 35px;
+
+}
+
+/* Make the image fully responsive */
+#demo2 img {
+  		
+	width: 73%;
+	height: 73%;
+    			
+}
+
+#demo2 {
+	
+	background-color: #ffffff;	
+	
+}
+
+#demo2 span {
+	
+	background-color: #000000;
+	
+}
+
+#demo2 h2 {
+	
+	position: absolute;
+	margin-left: 80px;
+	font-family: 'Ranchers', cursive;
+	
+}
+
+#demo2 h3 {
+	
+	position: absolute;
+	margin: 40px 0 0 80px;
+	font-family: 'Quattrocento Sans', sans-serif; 
+	
+}
+
+/* Make the image fully responsive */
+#demo3 img {
+  		
+	width: 78%;
+	height: 78%;
+    			
+}
+
+#demo3 {
+	
+	background-color: #ffffff;	
+	
+}
+
+#demo3 span {
+	
+	background-color: #000000;
+	
+}
+
+#demo3 h2 {
+	
+	position: absolute;
+	margin-left: 80px;
+	font-family: 'Ranchers', cursive;
+	
+}
+
+#demo3 h3 {
+	
+	position: absolute;
+	margin: 40px 0 0 80px;
+	font-family: 'Quattrocento Sans', sans-serif; 
+	
+}
+
+/* Make the image fully responsive */
+#demo4 img {
+  		
+	width: 75%;
+	height: 75%;
+    			
+}
+
+#demo4 {
+	
+	background-color: #ffffff;	
+	
+}
+
+#demo4 span {
+	
+	background-color: #000000;
+	
+}
+
+#demo4 h2 {
+	
+	position: absolute;
+	margin-left: 76px;
+	font-family: 'Ranchers', cursive;
+	
+}
+
+#demo4 h3 {
+	
+	position: absolute;
+	margin: 40px 0 0 76px;
+	font-family: 'Quattrocento Sans', sans-serif; 
+	
+}
+
+#col2 {
+	
+	margin-top: 160px;
+	
+}
+
+/* Make the image fully responsive */
+#demo5 img {
+  		
+	width: 52%;
+	height: 52%;
+    			
+}
+
+#demo5 {
+	
+	background-color: #ffffff;	
+	
+}
+
+#demo5 span {
+	
+	background-color: #000000;
+	
+}
+
+#demo5 h2 {
+	
+	position: absolute;
+	margin-left: 240px;
+	font-family: 'Ranchers', cursive;
+	
+}
+
+#demo5 h3 {
+	
+	position: absolute;
+	margin: 40px 0 0 240px;
+	font-family: 'Quattrocento Sans', sans-serif; 
+	
+}
+
+/* Make the image fully responsive */
+#demo6 img {
+  		
+	width: 57%;
+	height: 57%;
+    			
+}
+
+#demo6 {
+	
+	background-color: #ffffff;	
+	
+}
+
+#demo6 span {
+	
+	background-color: #000000;
+	
+}
+
+#demo6 h2 {
+	
+	position: absolute;
+	margin-left: 205px;
+	font-family: 'Ranchers', cursive;
+	
+}
+
+#demo6 h3 {
+	
+	position: absolute;
+	margin: 40px 0 0 205px;
+	font-family: 'Quattrocento Sans', sans-serif; 
+	
+}
+
+#footerT {
+			
+	margin-top: 80px;
+	background-color: #000000;	
+	position: absolute;
+	width: 100%;
+
+}
+
+#fav {
+	
+	position: absolute;
+	margin: 50px 0 0 100px;
+	font-size: 38px;
+	color: #ffffff;
+	font-family: 'Quattrocento Sans', sans-serif;
+	
+}
+
+#coraFav {
+	
+	position: absolute;
+	width: 80px;
+	margin: 35px 0 0 280px;
+	
+	
+}
+
+#car {
+	
+	position: absolute;
+	width: 80px;
+	margin: 35px 0 0 1650px;
+	
+}
+
+#box {
+	
+	position: absolute;
+	width: 15%;
+	margin-top: 150px;
+	margin-left: 210px; 
+	border: 7px solid #ffffff; 
+	
+}
+
+#footerT p {
+	
+	color: #ffffff;
+	font-size: 80px;
+	margin: 215px 0 0 325px; 
+	z-index: 1;
+	position: absolute;
+	
+}
+
+#cora {
+	
+	margin: 30px 0 0 260px;
+	position: absolute;
+	width: 70px;
+	
+}
+
+#cora2 {
+	
+	position: absolute;
+	margin: 30px 0 0 910px;
+	width: 70px;
+	
+}
+
+#cora3 {
+	
+	margin: 30px 0 0 1580px;
+	position: absolute;
+	width: 70px;
+	
+}
+
+#cora4 {
+	
+	margin: 30px 0 0 460px;
+	position: absolute;
+	width: 70px;
+	
+}
+
+#cora5 {
+	
+	margin: 30px 0 30px 1430px;
+	position: absolute;
+	width: 70px;
+	
+}
+
+#linea3T {
+	
+	margin-top: 520px;
+	height: 4px;
+  	width: 70%;
+  	background-color: white;
+	align: center;
+	
+}
+
+#fond {
+	
+	z-index: -2;
+	width: 1300px;
+	height: 800px;
+	
+}
+
+#box2 {
+	
+	position: absolute;
+	border: 7px solid #000000;
+	margin: 166px 0 0 510px;
+	width: 47%;
+	height: 139px;
+	
+}
+
+#fondo h2 {
+	
+	position: absolute;
+	margin: 180px 0 0 780px;
+	font-family: 'Pacifico', cursive;
+	color: #ffffff;
+	font-size: 87px;
+	z-index: 1; 
+	
+}
+
+#box3 {
+	
+	position: absolute;
+	border: 7px solid #000000;
+	margin: 560px 0 0 510px;
+	width: 47%;
+	height: 139px;
+	
+}
+
+#fondo h3 {
+	
+	position: absolute;
+	margin: 565px 0 0 795px;
+	font-family: 'Pacifico', cursive;;
+	color: #ffffff;
+	font-size: 85px;
+	z-index: 1;
+	
+}
+
+#agra {
+
+	margin: 50px 0 0 470px;
+	font-size: 40px;
+	color: #ffffff;
+	font-family: 'Quattrocento Sans', sans-serif;
+	position: absolute;
+	
+}
+
+#contact {
+	
+	margin-top: 370px; 
+	margin-left: 860px; 
+	text-align: center;
+	font-size: 35px;
+	color: #ffffff;
+	font-family: 'Quattrocento Sans', sans-serif;
+	position: absolute;
+	
+}
+
+#agrade {
+	
+	margin-top: 430px;
+	margin-left: 915px; 
+	width: 70px;
+	position: absolute;
+	
+}
+
+#footerTT {
+			
+	margin-top: 80px;
+	background-color: #000000;	
+	position: absolute;
+	width: 100%;
+
+}
+
+#linea3TT {
+	
+	margin-top: 550px;
+	height: 4px;
+  	width: 70%;
+  	background-color: white;
+	align: center;
+	
+}
+
+#fondoC {
+	
+	margin-top: 50px;
+	width: 100%;
+	height: 800px;
+	
+}
+
+#footerTTT {
+			
+	margin-top: 80px;
+	background-color: #000000;	
+	position: absolute;
+	width: 100%;
+
+}
+
+#qs h1 {
+	
+	font-size: 45px; 
+	font-family: 'Questrial', sans-serif;
+	position: absolute;
+	margin: -740px 0 0 790px;
+	
+}
+
+#qsomos {
+	
+	font-size: 35px; 
+	font-family: 'Questrial', sans-serif;
+	position: absolute;
+	margin: -630px 0 0 0;
+	text-align: center;
+	color: #000000;
+	
+}
+
+#qs h2 {
+	
+	font-size: 45px; 
+	font-family: 'Questrial', sans-serif;
+	position: absolute;
+	margin: -400px 0 0 400px;
+	
+}
+
+#mis {
+	
+	font-size: 35px; 
+	font-family: 'Questrial', sans-serif;
+	position: absolute;
+	margin: -280px 0 0 90px;
+	text-align: center;
+	color: #000000;
+	
+}
+
+#qs h3 {
+	
+	font-size: 45px; 
+	font-family: 'Questrial', sans-serif;
+	position: absolute;
+	margin: -400px 0 0 1310px;
+	
+}
+
+#vis {
+	
+	font-size: 35px; 
+	font-family: 'Questrial', sans-serif;
+	position: absolute;
+	margin: -280px 0 0 1040px;
+	text-align: center;
+	color: #000000;
+	
+}
+
+
+#usu h1 {
+	
+	font-size: 45px; 
+	font-family: 'Questrial', sans-serif;
+	position: absolute;
+	margin: 30px 0 0 30px;
+	color: #000000;	
+	
+}
+
+#usu img {
+	
+	width: 10%;
+	margin-top: 110px;
+	
+}
+
+#usuw {
+	
+	margin: 0 300px 25px 100px;
+	
+}
+
+#usuwa {
+	
+	margin: 0 300px 25px 0;
+	
+}
+
+#usuwari {
+	
+	margin: 0 300px 25px 0;
+	
+}
+
+#usuwario {
+	
+	margin: 0 0 25px 0;
+	
+}
+
+#ana {
+	
+	font-size: 20px; 
+	font-family: 'Questrial', sans-serif;
+	margin: 0 0 0 20px;
+	color: #000000;	
+	
+}
+
+#jesus {
+	
+	font-size: 20px; 
+	font-family: 'Questrial', sans-serif;
+	margin: -212px 0 0 500px;
+	color: #000000;	
+	position: absolute;
+	
+}
+
+#jorge {
+	
+	font-size: 20px; 
+	font-family: 'Questrial', sans-serif;
+	margin: -212px 0 0 990px;
+	color: #000000;	
+	position: absolute;
+	
+}
+
+#giancarlo {
+	
+	font-size: 20px; 
+	font-family: 'Questrial', sans-serif;
+	margin: -212px 0 0 1460px;
+	color: #000000;	
+	position: absolute;
+	
+}
+
+#cont {
+	
+	position: absolute;
+	margin: 35px 0 0 100px;
+	font-size: 38px;
+	color: #ffffff;
+	font-family: 'Quattrocento Sans', sans-serif;
+	
+}
+
+#datos {
+	
+	position: absolute;
+	margin: 140px 0 0 890px;
+	font-size: 38px;
+	color: #ffffff;
+	font-family: 'Quattrocento Sans', sans-serif;
+	
+}
+
+#footerTTT p {
+
+	position: absolute;
+	margin: 220px 0 0 800px;
+	font-size: 30px;
+	text-decoration: underline;
+	color: #ffffff;
+	font-family: 'Quattrocento Sans', sans-serif;
+	
+}
+#linea3TTT {
+	
+	margin-top: 350px;
+	height: 4px;
+  	width: 70%;
+  	background-color: white;
+	align: center;
+	
+}
+

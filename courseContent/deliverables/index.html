@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+		<title>FDI Verano 2020 - JM</title>
+		<link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSGLLnSD-QZjZNEvWNUsvCBoH4N5_jjNOUZVw&usqp=CAU">
+    	<link rel="stylesheet" type="text/css" href="styles.css">
+		<link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+		
+	</head>
+	
+	<body>	
+	
+		<div id="header">
+		
+			<h1>FDI Verano 2020</h1>
+			<h2>Jesús Monterrubio<sub>.🇲🇽</sub></h2>
+			
+		</div>	
+		<nav class="menu">
+		
+			<ul>
+		
+				<li id="m"><a href="labs/index.html" target="_blank">Laboratorios</a></li>
+				<li id="e"><a href="proyectoFinal_Personal/index.html" target="_blank">Proyecto Personal</a></li>
+				<li id="n"><a href="https://drive.google.com/drive/folders/1AhwHRfyCmzlnDwT4SJDbKcXA_h8XxRCR" target="_blank">Proyecto Final<br> en Equipos<br> (Documentación)</a></li>
+				<li id="u"><a href="proyectoFinal_Team/index.html" target="_blank">Proyecto Final<br> en Equipos<br> (Página web)</a></li>
+			
+			</ul>
+					
+        </nav>
+        <span class="target"></span>
+		<script>
+		
+			(function() {
+
+  				const target = document.querySelector(".target");
+  				const links = document.querySelectorAll(".menu a");
+  				const colors = ["deepskyblue", "orange", "firebrick", "gold", "green", "black", "darkblue"];
+
+  				function mouseenterFunc() {
+   					if (!this.parentNode.classList.contains("active")) {
+      					for (let i = 0; i < links.length; i++) {
+        					if (links[i].parentNode.classList.contains("active")) {
+          						links[i].parentNode.classList.remove("active");
+        					}
+        					links[i].style.opacity = "0.25";
+      					}
+
+      					this.parentNode.classList.add("active");
+     	 				this.style.opacity = "1";
+
+      					const width = this.getBoundingClientRect().width;
+      					const height = this.getBoundingClientRect().height;
+      					const left = this.getBoundingClientRect().left + window.pageXOffset;
+      					const top = this.getBoundingClientRect().top + window.pageYOffset;
+      					const color = colors[Math.floor(Math.random() * colors.length)];
+
+      					target.style.width = `${width}px`;
+      					target.style.height = `${height}px`;
+      					target.style.left = `${left}px`;
+      					target.style.top = `${top}px`;
+      					target.style.borderColor = color;
+      					target.style.transform = "none";
+    				}
+  				}
+
+  				for (let i = 0; i < links.length; i++) {
+    				links[i].addEventListener("mouseenter", mouseenterFunc);
+  				}
+
+  				function resizeFunc() {
+    				const active = document.querySelector(".menu li.active");
+
+    				if (active) {
+      					const left = active.getBoundingClientRect().left + window.pageXOffset;
+      					const top = active.getBoundingClientRect().top + window.pageYOffset;
+
+      					target.style.left = `${left}px`;
+      					target.style.top = `${top}px`;
+    				}
+  				}
+
+  				window.addEventListener("resize", resizeFunc);
+
+			})();
+		
+		</script>
+		
+	</body>
+	
+</html>

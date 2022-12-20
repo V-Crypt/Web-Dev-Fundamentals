@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Apuntes 7 - JS</title>
+    </head>
+    <body>
+        
+        
+        
+        <h2>Ejemplo fecha y hora</h2>
+        
+        <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+        Mostrar fecha y hora.
+        </button>
+        
+        <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>"Hola Mundo"</button>
+        
+        <button type="button" id="desh" onclick="deshabilitar()">Deshabilitar un botón</button>
+        
+        <h1>Párrafo de prueba</h1>
+        <p id="demo">Este texto va a cambiar</p>
+        
+        <h1>Animación</h1>
+        
+        <button onclick="document.getElementById('imagen').src =  'https://www.w3schools.com/js/pic_bulbon.gif'">Prendido</button>
+        <img src="https://www.w3schools.com/js/pic_bulboff.gif" id="imagen"><button onclick="document.getElementById('imagen').src =  'https://www.w3schools.com/js/pic_bulboff.gif'">Apagado</button>
+        
+        <script>
+            function deshabilitar() {
+                var x = document.getElementById("desh");
+                x.disabled = true;
+            }
+        </script>
+        
+    </body>
+</html>

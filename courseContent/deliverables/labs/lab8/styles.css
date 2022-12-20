@@ -1,0 +1,70 @@
+	#content h1 {
+	
+		text-align: center;
+		font-family: 'Orbitron', sans-serif;
+		font-size: 8em;
+		padding-top: 8px;
+		color: #ffffff;	
+	
+	}
+	
+	body {
+	
+		background-image: url("https://bnetproduct-a.akamaihd.net//fe2/f7f4c71a1895865893aa2a1489cd6688-Lazarus-Bnet_Game-Shop_Card_Feature_1B_Ghost-960x540.jpg");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-attachment: fixed;
+	
+	}
+	
+	#demo {
+	
+		position: absolute; 
+		left: 390px;
+		border: dashed 8px #ff0000;
+		margin: 80px 0 80px 270px;
+		width: 570px;
+	
+	
+	}
+	
+	.buttons {
+	
+		position: absolute; 
+		top: 610px;
+		left: 33px;
+		right: -60px;
+	
+	}
+	
+	.buttons button {
+	
+		margin: 30px -60px  0 130px;
+		background-color: #0000ff;
+	
+	}
+	
+	.buttons img {
+	
+		width: 250px;
+		height: 180px;
+	
+	}
+	
+	.buttons video {
+	
+		border: dashed 8px #ff0000;
+		margin: 80px 0 80px 270px;
+		width: 570px;
+	
+	}
+	
+	#res {
+	
+		position: absolute; 
+		top: 280px;
+		left: 640px;
+		margin-bottom: 15px;
+		background-color: #00ff00;
+	
+	}

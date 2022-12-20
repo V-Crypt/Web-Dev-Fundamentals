@@ -1,0 +1,44 @@
+#nombre {
+	
+	font-family: 'Alfa Slab One', cursive;
+	font-size: 100px; 
+	color: #ffffff;
+	text-transform: uppercase;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: black;
+	position: absolute;
+	top: 30px; 
+	left: 540px;
+	
+}
+
+#frase {
+	
+	font-family: 'Alfa Slab One', cursive;
+	font-size: 60px; 
+	color: #000000;
+	text-transform: uppercase;
+	text-align: center;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: white;
+	position: absolute;
+	top: 250px; 
+	left: 30px;
+	
+}
+         
+#icono img {
+	
+	position: absolute; 
+	width: 400px;
+	top: 480px;
+	left: 750px; 
+
+}  
+
+#fondo {
+	
+	position: fixed;
+	width: 100%
+	
+}

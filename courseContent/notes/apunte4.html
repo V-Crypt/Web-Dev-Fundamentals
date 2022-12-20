@@ -1,0 +1,166 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Apuntes 3 - CSS interna</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap" rel="stylesheet">
+
+
+        <style>
+             /* CSS - Cascading Style Sheets */
+            /* selector { 
+             propiedad : valor; 
+                } */
+     
+            h1 {
+                font-family: 'Montserrat Subrayada', sans-serif;
+
+            }
+            
+            
+            
+            body { 
+                background-color: #000000;
+                background: url(https://i.pinimg.com/236x/ba/14/46/ba1446a25001cafa952de5f8abc771aa--graphic-pattern-pattern-design.jpg);
+                
+            }
+        
+            #content {
+                border: solid 5px blue;  
+                width: 960px; 
+                margin: 50px auto; 
+                background-color: white; 
+            }
+            
+            #header { /* # id */
+                border: solid 5px orange;
+                text-align: center;
+            } 
+            
+            #header img {
+                width: 500px;
+            }
+           
+            ul li {
+                display: inline; 
+                margin-right: 20px; 
+            }
+              
+            #header ul li a {
+                color: #ffffff;
+                text-decoration: none;
+                background-color: #000000;
+                padding: 10px;
+                text-transform: uppercase;
+            }
+            
+            #header ul li a:hover {
+                background-color: #ff0000;
+                text-decoration: underline;
+            }
+            
+            #historia {
+                padding: 0 20px;
+                border: solid 5px pink;
+            }
+            
+            #historia img {
+                width: 400px;
+            }
+            
+            .derecha {   
+                float: right;
+            }
+            
+            .izquierda {   
+                float: left;
+            }
+            
+            #discografia {
+                border: solid 5px yellow;
+            }
+            
+            .album {
+                border: solid 3px red; 
+                padding: 15px; 
+                overflow: auto;
+            }
+            
+            .album img {
+                width: 200px;
+                margin-right: 15px;
+            }
+            
+            strong {
+                font-size: 40px;
+            }
+            
+            span {
+                color: red;
+                font-weight: bolder;
+                font-size: 25px;
+            }
+            
+        </style>
+        
+    </head>
+
+    <body>
+     <div id="content" >
+         <div id="header">
+         <img src="https://i.pinimg.com/originals/f2/78/8e/f2788e9a36479eb3ee79ac85845534e8.png">
+             <ul id="menu" >
+                 <li><a href="#">Home</a></li>
+                 <li><a href="#historia">Historia</a></li>
+                 <li><a href="#discografia">Discografía</a></li>
+                 <li><a href="#tour">Tour</a></li>
+             </ul>
+         
+         </div>
+         
+         <div id="historia">
+         <h1>Historia</h1>
+        <img class="derecha" src="https://www.elquintobeatle.com/wp-content/uploads/2019/08/oasis-1994-3-1920x1273.jpeg" >
+         <p><strong>Oasis</strong> fue una banda de Rock inglesa ícono del Britpop formada en Mánchester en 1991. En sus inicios, conocidos como The Rain, el grupo contaba en sus filas con el cantante Chris Hutton, el guitarrista Paul Arthurs, el bajista Paul McGuigan y el baterista Daniel Alexander, a los que más tarde se unirían, en 1990, Liam Gallagher en la voz y Tony McCarroll como batería. Los últimos en unirse fueron los hermanos mayores de Liam, Noel Gallagher y Anna Gallagher quienes obtuvieron el papel de compositores, guitarristas principales y cantantes secundarios.
+
+Debido a las <span>15 millones de copias</span> vendidas de su álbum debut Definitely Maybe, a las 30 millones de copias vendidas de su segundo álbum (What's the Story) Morning Glory?1​ y al hecho de que su tercer álbum Be Here Now se convirtiera en el disco más rápidamente vendido en la historia del Reino Unido con 520 000 copias vendidas tan solo el día de su puesta a la venta, Oasis ha sido considerado como uno de los grupos musicales más importantes en la historia musical de Reino Unido, habiendo entrado en varias ocasiones en el Libro Guinness de los récords (actualmente siguen teniendo uno de ellos en su haber). Publicaron 33 singles, de los cuales 9 alcanzaron el puesto n.º 1 de las listas británicas y 2 el puesto n.º 1 de las listas estadounidenses.2​
+
+Los hermanos Gallagher fueron los líderes y compositores del grupo. Vendieron más de 100 millones de copias a nivel mundial3​ y, hasta antes de la separación del grupo, Liam Gallagher era el único miembro original que había permanecido en él. Los hermanos Gallagher fueron también reconocidos por sus constantes peleas entre sí y con otros grupos y artistas, como Blur y Robbie Williams, las cuales propiciaron su aparición en múltiples ocasiones en la prensa sensacionalista.4​ Tras la deserción de Paul Arthurs, Paul McGuigan, y más tarde la de Alan White, la alineación final se completaría con el guitarrista Gem Archer, el bajista Andy Bell y el baterista Chris Sharrock, aunque finalmente el último miembro en abandonar el grupo, ocasionando así su disolución, fue Noel Gallagher.5​
+
+En 2004, la edición española de la revista Rolling Stone colocó a Oasis en el puesto n.º 13 entre "Las 50 bandas más grandes de la historia del rock". En 2007, el grupo fue galardonado con el BRIT Award por su «notable contribución a la música».6​ Dig Out Your Soul, su último álbum, vio su lanzamiento a principios de octubre de 2008.7​
+
+El 28 de agosto de 2009, tras una fuerte discusión entre los hermanos Gallagher, Noel decidió abandonar el grupo poniendo punto final a una era.8​9​En diciembre del mismo año Liam anunció que el grupo continuaría grabando sin Noel.10​ Después de algunas especulaciones el grupo cambió su nombre por el de Beady Eye.11​</p>
+         
+         </div>
+        <div id="discografia">
+         <div class="album">
+            <h1>Definitely Maybe</h1>
+            <img src="https://www.elquintobeatle.com/wp-content/uploads/2015/09/oasis-definitely-maybe-1.jpg" class="izquierda" >
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a nisl a nisi sodales tristique quis vel erat. Donec vestibulum lacus molestie, malesuada erat nec, condimentum metus. Nulla vitae suscipit arcu. Duis vitae tincidunt mauris.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a nisl a nisi sodales tristique quis vel erat. Donec vestibulum lacus molestie, malesuada erat nec, condimentum metus. Nulla vitae suscipit arcu. Duis vitae tincidunt mauris. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a nisl a nisi sodales tristique quis vel erat. Donec vestibulum lacus molestie, malesuada erat nec, condimentum metus. Nulla vitae suscipit arcu. Duis vitae tincidunt mauris. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a nisl a nisi sodales tristique quis vel erat. Donec vestibulum lacus molestie, malesuada erat nec, condimentum metus. Nulla vitae suscipit arcu. Duis vitae tincidunt mauris. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a nisl a nisi sodales tristique quis vel erat. Donec vestibulum lacus molestie, malesuada erat nec, condimentum metus. Nulla vitae suscipit arcu. Duis vitae tincidunt mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a nisl a nisi sodales tristique quis vel erat. Donec vestibulum lacus molestie, malesuada erat nec, condimentum metus. Nulla vitae suscipit arcu. Duis vitae tincidunt mauris. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a nisl a nisi sodales tristique quis vel erat. Donec vestibulum lacus molestie, malesuada erat nec, condimentum metus. Nulla vitae suscipit arcu. Duis vitae tincidunt mauris. 
+            </p>
+        
+        
+        </div>
+            <div class="album">
+            <h1>Whats the story (Morning glory)?</h1>
+            <img src="https://www.elquintobeatle.com/wp-content/uploads/2015/10/oasis-whats-the-story-morning-glory-1-1068x1068.jpg" class="izquierda" >
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a nisl a nisi sodales tristique quis vel erat. Donec vestibulum lacus molestie, malesuada erat nec, condimentum metus. Nulla vitae suscipit arcu. Duis vitae tincidunt mauris.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a nisl a nisi sodales tristique quis vel erat. Donec vestibulum lacus molestie, malesuada erat nec, condimentum metus. Nulla vitae suscipit arcu. Duis vitae tincidunt mauris. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a nisl a nisi sodales tristique quis vel erat. Donec vestibulum lacus molestie, malesuada erat nec, condimentum metus. Nulla vitae suscipit arcu. Duis vitae tincidunt mauris. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a nisl a nisi sodales tristique quis vel erat. Donec vestibulum lacus molestie, malesuada erat nec, condimentum metus. Nulla vitae suscipit arcu. Duis vitae tincidunt mauris. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a nisl a nisi sodales tristique quis vel erat. Donec vestibulum lacus molestie, malesuada erat nec, condimentum metus. Nulla vitae suscipit arcu. Duis vitae tincidunt mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a nisl a nisi sodales tristique quis vel erat. Donec vestibulum lacus molestie, malesuada erat nec, condimentum metus. Nulla vitae suscipit arcu. Duis vitae tincidunt mauris. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a nisl a nisi sodales tristique quis vel erat. Donec vestibulum lacus molestie, malesuada erat nec, condimentum metus. Nulla vitae suscipit arcu. Duis vitae tincidunt mauris. 
+            </p>
+        
+        
+        </div>
+           
+        </div>
+       </div> 
+    </body>
+
+</html>

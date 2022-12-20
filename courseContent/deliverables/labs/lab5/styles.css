@@ -1,0 +1,167 @@
+body {
+	
+	background: url(https://previews.123rf.com/images/logvinyk/logvinyk1602/logvinyk160203463/52852076-signo-de-icono-de-guantes-de-boxeo-patrones-sin-fisuras-con-textura-geom%C3%A9trica-ilustraci%C3%B3n-vectorial.jpg);
+	font-family: 'Orbitron', sans-serif; 
+	color: #ffffff;
+	
+}
+
+#all {
+	
+	border: solid 5px #808080;  
+    width: 960px; 
+    margin: auto;
+    background-color: #000000;  
+
+}
+
+#header {
+	
+	text-align: center;
+	
+}
+
+#header h1 {
+	
+	font-size: 90px;
+	
+}
+
+#header hr {
+	
+	height: 5px;
+	background-color: black;
+	
+}
+
+#header hr {
+	
+	height: 5px;
+	background-color: #ffffff;
+	
+}
+
+#l1 {
+	
+	margin-top: 100px;
+			
+}
+
+#l2 {
+				
+	margin-bottom: 70px;
+			
+}
+			
+#header ul li {
+			
+	display: inline; 
+
+}
+              
+#header ul li a {
+            
+	color: #ffffff;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	background-color: #000000;
+	padding: 10px;
+                
+}
+
+#header ul li a:hover {
+            
+	background-color: #6EB5B8;
+    color: #000000;
+               
+}
+
+#content h1 {
+	
+	margin-left: 10px; 
+	
+}
+
+#content iframe {
+	
+	width: 100%;
+	height: 600px;
+	display: block;
+	margin: 70px auto 70px auto;
+	
+	
+}
+
+#footer {
+	
+	border: solid 5px;
+	background-color: #ffffff;
+	
+}
+
+#footer img {
+	
+	width: 100px;
+	display: block;
+	margin: auto;
+	
+}
+
+#wireframe {
+	
+	float: right;
+	font-size: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	
+}
+
+#wireframe img {
+	
+	width: 30px;	
+	
+}
+
+#contentM h3 {
+	
+	margin-left: 10px;
+	
+}
+
+#contentM img{
+	
+	display: block;
+	margin: 50px auto 50px auto;
+	width: 500px;
+	
+}
+
+#contentT h3 {
+	
+	margin-left: 10px;
+	
+}
+
+#contentT img {
+	
+	display: block;
+	margin: 50px auto 50px auto;
+	width: 500px;
+	
+}
+
+#contentC {
+
+	text-align: center;
+	font-size: 25px;
+
+}
+
+#contentC img {
+	
+	display: block;
+	margin: 50px auto 50px auto;
+	width: 500px;
+	
+}

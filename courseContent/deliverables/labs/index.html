@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<meta charset="UTF-8">
+		<title>Laboratorios - JM</title>
+		<link rel="icon" href="https://us.123rf.com/450wm/dxinerz/dxinerz1508/dxinerz150800255/43410742-cient%C3%ADfico-imagen-vectorial-m%C3%A9dica-icono-laboratorio-tambi%C3%A9n-se-puede-utilizar-para-profesionales-adecuado.jpg?ver=6">
+    	<link rel="stylesheet" type="text/css" href="styles.css">
+		<link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+	
+	</head>
+	
+	<body>
+		
+		<div id="header">
+			
+			<h1>Laboratorios<br> FDI</h1>
+		
+		</div>
+		<nav class="menu">
+		
+			<table>
+			
+				<tr>
+				
+					<th>
+			
+						<ul>
+			
+							<li><a href="lab1/index.html" target="_blank">Lab 1</a></li>
+							<li><a href="lab2/index.html" target="_blank">Lab 2</a></li>
+							<li><a href="lab3/index.html" target="_blank">Lab 3</a></li>
+							
+						</ul>
+						
+					</th>
+					
+				</tr>
+				
+			</table>
+			<table>
+			
+				<tr>
+				
+					<th>
+			
+						<ul>
+			
+							<li><a href="lab4/index.html" target="_blank">Lab 4</a></li>
+							<li><a href="lab5/index.html" target="_blank">Lab 5</a></li>
+							<li><a href="lab6/index.html" target="_blank">Lab 6</a></li>
+							
+						</ul>
+						
+					</th>
+					
+				</tr>
+				
+			</table>
+			<table>
+			
+				<tr>
+				
+					<th>
+			
+						<ul>				
+							
+							<li><a href="lab7/index.html" target="_blank">Lab 7</a></li>
+							<li><a href="lab8/index.html" target="_blank">Lab 8</a></li>
+							<li><a href="lab9/index.html" target="_blank">Lab 9</a></li>
+				
+						</ul>
+						
+					</th>
+					
+				</tr>
+				
+			</table>
+			
+		</nav>
+        <span class="target"></span>
+		<script>
+		
+			(function() {
+
+  				const target = document.querySelector(".target");
+  				const links = document.querySelectorAll(".menu a");
+  				const colors = ["deepskyblue", "orange", "firebrick", "gold", "green", "black", "darkblue"];
+
+  				function mouseenterFunc() {
+   					if (!this.parentNode.classList.contains("active")) {
+      					for (let i = 0; i < links.length; i++) {
+        					if (links[i].parentNode.classList.contains("active")) {
+          						links[i].parentNode.classList.remove("active");
+        					}
+        					links[i].style.opacity = "0.25";
+      					}
+
+      					this.parentNode.classList.add("active");
+     	 				this.style.opacity = "1";
+
+      					const width = this.getBoundingClientRect().width;
+      					const height = this.getBoundingClientRect().height;
+      					const left = this.getBoundingClientRect().left + window.pageXOffset;
+      					const top = this.getBoundingClientRect().top + window.pageYOffset;
+      					const color = colors[Math.floor(Math.random() * colors.length)];
+
+      					target.style.width = `${width}px`;
+      					target.style.height = `${height}px`;
+      					target.style.left = `${left}px`;
+      					target.style.top = `${top}px`;
+      					target.style.borderColor = color;
+      					target.style.transform = "none";
+    				}
+  				}
+
+  				for (let i = 0; i < links.length; i++) {
+    				links[i].addEventListener("mouseenter", mouseenterFunc);
+  				}
+
+  				function resizeFunc() {
+    				const active = document.querySelector(".menu li.active");
+
+    				if (active) {
+      					const left = active.getBoundingClientRect().left + window.pageXOffset;
+      					const top = active.getBoundingClientRect().top + window.pageYOffset;
+
+      					target.style.left = `${left}px`;
+      					target.style.top = `${top}px`;
+    				}
+  				}
+
+  				window.addEventListener("resize", resizeFunc);
+
+			})();
+		
+		</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    	
+    	<meta charset="UTF-8">
+  		<title>WarZone | Controles dinámicos</title>
+  		<link rel="icon" href="https://www.somosxbox.com/wp-content/uploads/2020/03/Un-rumor-indica-que-el-Battle-Royale-Call-of-Duty-Warzone-ser%C3%A1-gratuito-y-llegar%C3%A1-el-10-de-Marzo-790x444.jpg"/>
+  		<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" type="text/css" href="styles.css">
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  		<script>
+  		
+  			
+  		
+  		</script>
+        
+    </head>
+    
+    <body>
+        
+        <div id="content">
+        
+        	<h1>Controles Dinámicos</h1>
+        		
+        	<video id="demo"></video>
+        	
+        	<div class="buttons">
+        
+        		<button type="button" data-video-url="videos/Remate.mp4"><img src="https://i.ytimg.com/vi/kE8o2CctGmM/maxresdefault.jpg" alt="Remate en Warzone"></button>
+       	 		<button type="button" data-video-url="videos/Moto.mp4"><img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/03/call-duty-warzone-1888287.jpg" alt="Moto en Warzone"></button>
+        		<button type="button" data-video-url="videos/Muerte.mp4"><img src="https://www.gaceta.unam.mx/wp-content/uploads/2018/11/181115-Aca3_destaca-princ.jpg" alt="Muerte en Warzone"></button>
+        		<button type="button" data-video-url="videos/Gulag.mp4"><img src="https://img.resized.co/dexerto/eyJkYXRhIjoie1widXJsXCI6XCJodHRwczpcXFwvXFxcL2ltYWdlcy5kZXhlcnRvLmVzXFxcL3VwbG9hZHNcXFwvMjAyMFxcXC8wNVxcXC8yNTE2MDgxNFxcXC9jYW1iaW9zLWd1bGFnLXdhcnpvbmUuanBnXCIsXCJ3aWR0aFwiOlwiXCIsXCJoZWlnaHRcIjpcIlwiLFwiZGVmYXVsdFwiOlwiaHR0cHM6XFxcL1xcXC9zMy1ldS13ZXN0LTEuYW1hem9uYXdzLmNvbVxcXC9wcGx1cy5pbWFnZXMuZGV4ZXJ0by5jb21cXFwvdXBsb2Fkc1xcXC8yMDE5XFxcLzExXFxcLzExMjE0OTQzXFxcL3BsYWNlaG9sZGVyLmpwZ1wiLFwib3B0aW9uc1wiOltdfSIsImhhc2giOiIzMTFiZmE0YTY2YzAzZDcyZjQ1NjBjMjg5NGI0MWQ2ZTgyMTg0ZDFlIn0=/cambios-gulag-warzone.jpg" alt="Gulag en Warzone"></button>
+        		<button type="button" data-video-url="videos/Redespliegue.mp4"><img src="https://img.resized.co/dexerto/eyJkYXRhIjoie1widXJsXCI6XCJodHRwczpcXFwvXFxcL2ltYWdlcy5kZXhlcnRvLmVzXFxcL3VwbG9hZHNcXFwvMjAyMFxcXC8wNlxcXC8wMjE0MzY1NlxcXC9leHRyYW5vLWZhbGxvLWRlbC1wYXJhY2FpZGFzLWRlLXdhcnpvbmUtaGFjZS1xdWUtbG9zLWp1Z2Fkb3Jlcy12dWVsZW4taGFjaWEtYXJyaWJhLmpwZ1wiLFwid2lkdGhcIjo2NDcsXCJoZWlnaHRcIjozNDAsXCJkZWZhdWx0XCI6XCJodHRwczpcXFwvXFxcL3MzLWV1LXdlc3QtMS5hbWF6b25hd3MuY29tXFxcL3BwbHVzLmltYWdlcy5kZXhlcnRvLmNvbVxcXC91cGxvYWRzXFxcLzIwMTlcXFwvMTFcXFwvMTEyMTQ5NDNcXFwvcGxhY2Vob2xkZXIuanBnXCIsXCJvcHRpb25zXCI6W119IiwiaGFzaCI6ImNiODhhMWU2YzYyZTQ5NzJiM2RiODRmMTI5YTY3YWY4NjZkZWY2MjEifQ==/extrano-fallo-del-paracaidas-de-warzone-hace-que-los-jugadores-vuelen-hacia-arriba.jpg" alt="Redespliegue en Warzone"></button>
+        		<br><!-- RESET --> 
+        		<button id="res" type="button"><img src="https://tayloredhealth.co.nz/wp-content/uploads/2018/12/2017_reset_sermon_slide-1030x579.jpg" alt="Reinicio"></button>
+  
+  			</div>
+  			
+  			<script>
+
+  				function swapVideo() {
+  					
+  			    	player.src = this.getAttribute("data-video-url");
+  			   	 	player.load();
+  			    	player.play();
+  			    	
+  				}
+
+  				var videoPlayButtons = document.querySelectorAll("button"),
+  			    	player = document.getElementById("demo");
+
+  				for (var i=0; i<videoPlayButtons.length; i++){
+  					
+  			    	videoPlayButtons[i].addEventListener('click', swapVideo);
+  			    	
+  				}
+  			
+  			</script>
+  			
+  		</div>
+        
+    </body>
+    
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Ciberseguridad | Frase ética</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="icon" href="img/icon.jpg">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+
+	<img id="fondo" src="img/fondo2.jpg">
+	<div class="jumbotron" id="header" style="margin-bottom:0">
+	
+  		<h1>Ciberseguridad</h1>
+  		
+	</div>
+  	<nav class="menu2">
+		
+		<hr id="linea1">	
+        <ul>
+            	
+            <li><a href="index.html">Info general</a></li>
+            <li><a href="recuerda.html">-Recuerda-</a></li>
+                	
+        </ul>
+        <hr id="linea2">
+            	
+	</nav>
+    <span class="target2"></span>
+    <div id="frase">
+    
+    	<h1>"Los verdaderos hackers siguen un cierto conjunto de reglas éticas, que les impiden lucrarse o causar daño en sus actividades".<br> (Kevin Mitnick)</h1>
+    
+    </div>
+
+<!-- <script>
+		
+			(function() {
+
+  				const target = document.querySelector(".target2");
+  				const links = document.querySelectorAll(".menu2 a");
+  				const colors = ["orange", "gold", "green", "red", "black", "white"];
+
+  				function mouseenterFunc() {
+   					if (!this.parentNode.classList.contains("active")) {
+      					for (let i = 0; i < links.length; i++) {
+        					if (links[i].parentNode.classList.contains("active")) {
+          						links[i].parentNode.classList.remove("active");
+        					}
+        					links[i].style.opacity = "0.25";
+      					}
+
+      					this.parentNode.classList.add("active");
+     	 				this.style.opacity = "1";
+
+      					const width = this.getBoundingClientRect().width;
+      					const height = this.getBoundingClientRect().height;
+      					const left = this.getBoundingClientRect().left + window.pageXOffset;
+      					const top = this.getBoundingClientRect().top + window.pageYOffset;
+      					const color = colors[Math.floor(Math.random() * colors.length)];
+
+      					target.style.width = `${width}px`;
+      					target.style.height = `${height}px`;
+      					target.style.left = `${left}px`;
+      					target.style.top = `${top}px`;
+      					target.style.borderColor = color;
+      					target.style.transform = "none";
+    				}
+  				}
+
+  				for (let i = 0; i < links.length; i++) {
+    				links[i].addEventListener("mouseenter", mouseenterFunc);
+  				}
+
+  				function resizeFunc() {
+    				const active = document.querySelector(".menu2 li.active");
+
+    				if (active) {
+      					const left = active.getBoundingClientRect().left + window.pageXOffset;
+      					const top = active.getBoundingClientRect().top + window.pageYOffset;
+
+      					target.style.left = `${left}px`;
+      					target.style.top = `${top}px`;
+    				}
+  				}
+
+  				window.addEventListener("resize", resizeFunc);
+
+			})();
+		
+		</script> -->
+		
+	</body>
+	
+</html>
